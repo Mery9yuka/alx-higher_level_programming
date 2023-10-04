@@ -3,4 +3,4 @@ for y in range(0, 100):
     if y == 99:
         print("{}".format(y))
     else:
-        print("{:01}".format(y), end=", ")
+        print("{:02}".format(y), end=", ")
