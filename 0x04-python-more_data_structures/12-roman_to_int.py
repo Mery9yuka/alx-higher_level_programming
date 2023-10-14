@@ -14,7 +14,7 @@ def roman_to_int(roman_string):
     for y in range(len(roman_string)):
         if rom_dic.get(roman_string[y], 0) == 0:
             return 0
-        if (y != (len(roman_string) - 1)) and
+        if (y != (len(roman_string) - 1)) and\
             rom_dic[roman_string[y]] < rom_dic[roman_string[y + 1]]:
             i += rom_dic[roman_string[y]] * -1
 
