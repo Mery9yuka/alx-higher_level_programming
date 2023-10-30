@@ -3,7 +3,11 @@
 
 
 class Rectangle:
-    """class that defines a rectangle"""
+    """class that defines a rectangle
+    
+    Initialize the number of rectangle instance
+    """
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Construct the rectangle.
@@ -12,6 +16,7 @@ class Rectangle:
             width (int): width of the rectangle.
             height (int): height of the rectangle.
         """
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -100,5 +105,5 @@ class Rectangle:
 
     def __del__(self):
         """printing a message after deletion of rectangle"""
+        Rectangle.number_of_instances += 1
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
