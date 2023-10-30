@@ -4,7 +4,7 @@
 
 class Rectangle:
     """class that defines a rectangle
-    
+
     Initialize the number of rectangle instance
     """
     number_of_instances = 0
