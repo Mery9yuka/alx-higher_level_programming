@@ -5,13 +5,13 @@
 def matrix_divided(matrix, div):
     """Defining a function that divide all elements in matrix..
 
-    Return:
-        the new matrix that represent the result of the divided elements.
+    Returns:
+        the new matrix that represent the result of the divided elements
     """
     if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(R, list) for R in matrix) or
             not all((isinstance(ele, int) or isinstance(ele, float))
-                    for ele in [n for R in matrix for n in R])):
+                    for ele in [N for R in matrix for N in R])):
         raise TypeError("matrix must be a matrix (list of lists) of "
                         "integers/floats")
 
