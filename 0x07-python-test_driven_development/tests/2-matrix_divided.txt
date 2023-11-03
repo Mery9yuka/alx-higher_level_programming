@@ -1,0 +1,5 @@
+# 2-matrix_divided.txt
+
+This module is defining function that divides all elements of a matrix.
+
+``matrix_divided(matrix, div)``.
