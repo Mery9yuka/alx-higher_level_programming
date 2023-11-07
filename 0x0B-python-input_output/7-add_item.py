@@ -8,14 +8,14 @@ if __name__ == "__main__":
     load_from_json_file \
         = __import__('6-load_from_json_file').load_from_json_file
 
-textfile = "add_item.json"
+tfile = "add_item.json"
 
 try:
-    JSONL = load_from_json_file(textfile)
+    JSONL = load_from_json_file(tfile)
 except FileNotFoundError:
     JSONL = []
 
 for arg in argv[1:]:
     JSONL.append(arg)
 
-save_to_json_file(JSONL, textfile)
+save_to_json_file(JSONL, tfile)
