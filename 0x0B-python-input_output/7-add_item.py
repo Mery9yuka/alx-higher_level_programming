@@ -11,11 +11,11 @@ if __name__ == "__main__":
 tfile = "add_item.json"
 
 try:
-    JSONL = load_from_json_file(tfile)
+    item = load_from_json_file(tfile)
 except FileNotFoundError:
-    JSONL = []
+    item = []
 
 for arg in argv[1:]:
-    JSONL.append(arg)
+    item.append(arg)
 
-save_to_json_file(JSONL, tfile)
+save_to_json_file(item, tfile)
