@@ -1,10 +1,8 @@
-``1-my_list`` module
+===================
+Testing the 1-my_list Module
 ===================
 
-Testing the 1-my_list - module
--------------------
-
-importing:
+Importing:
 >>> MyList = __import__("1-my_list").MyList
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -23,7 +21,7 @@ importing:
 >>> my_list
 ['u', 't', 's', 'u', 'k', 'u', 's', 'h', 'i', 'i']
 
->>> my_list.print_sorted()
+>>>my_list.print_sorted()
 ['h', 'i', 'i', 'k', 's', 's', 't', 'u']
 
 >>> my_list = MyList()
