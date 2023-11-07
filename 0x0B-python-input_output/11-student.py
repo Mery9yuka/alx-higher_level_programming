@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """creates  a Student class """
 
-
 class Student:
     """ Retrieves a dictionary representation of student instance"""
     def __init__(self, first_name, last_name, age):
@@ -17,8 +16,7 @@ class Student:
 
         return self.__dict__
 
-def reload_from_json(self, json):
-        """Function that replace all attributes of the student
-        """
+    def reload_from_json(self, json):
+        """Function that replaces all attributes of the student"""
         for y, u in json.items():
             setattr(self, y, u)
