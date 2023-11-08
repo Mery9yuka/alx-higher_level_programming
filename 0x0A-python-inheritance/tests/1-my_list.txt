@@ -16,13 +16,14 @@ Importing:
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 
->>> my_list = MyList("utsukushii")
+>>> my_list = MyList("aloha")
 
 >>> my_list
-['u', 't', 's', 'u', 'k', 'u', 's', 'h', 'i', 'i']
+['a', 'l', 'o', 'h', 'a']
+
 
 >>>my_list.print_sorted()
-['h', 'i', 'i', 'k', 's', 's', 't', 'u']
+['a', 'a', 'h', 'o', 'l']
 
 >>> my_list = MyList()
 
