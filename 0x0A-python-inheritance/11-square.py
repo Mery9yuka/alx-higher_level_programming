@@ -19,7 +19,7 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
-        
+
     def __str__(self):
         """return square description: [Square] <width>/<height>"""
         stryu = "[" + str(self.__class__.__name__) + "] "
