@@ -1,9 +1,8 @@
 The ``7-base_geometry`` test case
 ==============================
 
-Using ``BaseGeometry``
+Using ``BaseGeometry`` function
 ----------------------
 
-Importing class from the module:
+Importing  class from the module:
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
