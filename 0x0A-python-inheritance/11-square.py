@@ -21,7 +21,7 @@ class Square(Rectangle):
         self.__size = size
         
     def __str__(self):
-        """return  rectangle description: [Square] <size>/<size>"""
+        """return square description: [Square] <width>/<height>"""
         stryu = "[" + str(self.__class__.__name__) + "] "
         stryu += str(self.__size) + "/" + str(self.__size)
         return stryu
