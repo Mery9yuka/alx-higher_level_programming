@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # test_square.py
+# Brennan D Baraban <375@holbertonschool.com>
 """Defines unittests for models/square.py.
 
 Unittest classes:
@@ -345,6 +346,12 @@ class TestSquare_stdout(unittest.TestCase):
     @staticmethod
     def capture_stdout(sq, method):
         """Captures and returns text printed to stdout.
+
+        Args:
+            sq (Square): The Square ot print to stdout.
+            method (str): The method to run on sq.
+        Returns:
+            The text printed to stdout by calling method on sq.
         """
         capture = io.StringIO()
         sys.stdout = capture
