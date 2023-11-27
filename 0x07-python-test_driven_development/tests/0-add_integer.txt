@@ -1,41 +1,55 @@
 # 0-add_integer.txt
-===========================
-This module defines a function that adds two integers
 
-Used :
-``add_integer(...)``` returns the addition of 2 arguments. For numbers,
-the value we will get is equivalent to using the ``+`` operator.
+===========================
+How to Use 0-add_integer.py
+===========================
+
+This module defines an integer addition function ``add_integer(a, b=98)``.
+
+Usage
+=====
+
+``add_integer(...)``` returns the addition of its two arguments. For numbers,
+that value is equivalent to using the ``+`` operator.
+
 ::
 
     >>> add_integer = __import__('0-add_integer').add_integer
     >>> add_integer(2, 3)
     5
+
 ::
 
     >>> add_integer(2, -3)
     -1
-This function works with floating-point values.
+
+The function also works with floating-point values.
+
 ::
+
     >>> add_integer(2.0, 3.0)
     5
-Note that floats are casted to integers before adding is performed.
+
+Note that floats are casted to ints before addition is performed.
+
 ::
 
     >>> add_integer(2.9, 0.2)
     2
+
 ::
 
     >>> add_integer(-2.9, -0.2)
     -2
 
-Float and non-float point values can be combined.
+Floating and non-floating point values can be combined.
 
 ::
 
     >>> add_integer(2.3, -3)
     -1
 
-The 2nd  argument is optional - its 98  by default.
+The second argument is optional - by default, it is 98.
 
 ::
 
@@ -88,7 +102,7 @@ The function will fail if infinity is provided.
     >>> add_integer(float('inf'))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
-
+     
 
 ::
 
