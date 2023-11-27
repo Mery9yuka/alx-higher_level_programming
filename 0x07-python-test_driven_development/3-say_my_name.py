@@ -4,7 +4,6 @@
 
 def matrix_divided(matrix, div):
     """Defining a function that divide all elements in matrix..
-
     Returns:
         the new matrix that represent the result of the divided elements
     """
