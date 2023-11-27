@@ -1,10 +1,12 @@
+# 4-print_square.txt
+
 ============================
-Use of 4-print_square.py
+How to Use 4-print_square.py
 ============================
 
 This module defines a square-printing function ``print_square(size)``.
 
-Use:
+Usage
 =====
 
 Squares are printed using the ``#`` character. The parameter ``size``
@@ -83,7 +85,7 @@ Note that type-checking occurs before value-checking.
     Traceback (most recent call last):
     TypeError: size must be an integer
 
-at least one argument must be provided.
+At least one argument must be provided.
 
 ::
 
