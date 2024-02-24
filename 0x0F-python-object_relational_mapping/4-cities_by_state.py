@@ -12,8 +12,8 @@ if __name__ == "__main__":
     curs = data_base.cursor()
     curs.execute("""SELECT cities.id, cities.name, states.name FROM
                 cities INNER JOIN states ON states.id=cities.state_id""")
-    row = curs.fetchall()
-    for r in row:
+    rows = curs.fetchall()
+    for row in rows:
         print(row)
     curs.close()
     data_base.close()
