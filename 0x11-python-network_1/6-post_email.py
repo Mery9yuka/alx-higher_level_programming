@@ -3,12 +3,15 @@
 -sends a POST request to the passed URL with email as a parameter,
 -displays the body of the response.
 """
+import requests
 import sys
-import urllib.request
 
 if __name__ == "__main__":
     URL = sys.argv[1]
+    email = sys.argv[2]
 
-    req = urllib.request.Request(URL)
-    with urllib.request.urlopen(req) as response:
-        print(dict(response.headers).get("X-Request-Id"))
+    var = {'email': email}
+    resp = requests.post(URL, data=var)
+
+    print("Your email is: {}".format(email))
+    print(resp.text)
